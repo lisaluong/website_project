@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FoodCalc Nutrition Insight | <%= @title %></title>
+    <%= stylesheet_link_tag("pages", "styles", :media => "all") %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+  
+  <%= render 'shared/header' %>
+  </head>
+  
+  <body>
+    <div class="container">
+	  
+      <%= yield %>
+    
+    </div>
+
+  <%= render 'shared/footer' %>
+  </body>
+</html>
